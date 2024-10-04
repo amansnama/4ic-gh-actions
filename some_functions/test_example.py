@@ -4,9 +4,6 @@ from my_functions import area_of_rectangle, perimeter_of_rectangle
 
 @pytest.mark.parametrize("width,height,area", [(3, 5, 15), (2, 4, 8), (6, 9, 54)])
 def test_area(width, height, area):
-    """
-    """
-    
     output = area_of_rectangle(width, height)
     assert output == area
 
