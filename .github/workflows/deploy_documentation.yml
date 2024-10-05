@@ -28,5 +28,5 @@ jobs:
           pip install -r requirements.txt
       - name: Deploy
         run: |
-          git pull origin main
+          git pull remote main
           mkdocs gh-deploy
